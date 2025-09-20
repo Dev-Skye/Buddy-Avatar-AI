@@ -25,7 +25,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.buddy.buddyavatarBuddy_AI_Avatar"
+      "package": "com.buddy.buddyavatatar"
     },
     "web": {
       "favicon": "./assets/favicon.png"
