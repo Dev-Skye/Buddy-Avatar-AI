@@ -14,8 +14,9 @@ It provides the **chat interface**, handles user input, displays Buddy's respons
 
 
 
-[Watch Demo Video](../assets/demo/BuddyAiAvatar.mp4)  
-[Watch Demo Video](../assets/demo/BuddyAiAvatar2.mp4) 
+[Watch Demo Video](https://raw.githubusercontent.com/Dev-Skye/Buddy-Avatar-AI/main/AvyAI_Frontend/assets/demo/BuddyAiAvatar.mp4)  
+[Watch Demo Video](https://raw.githubusercontent.com/Dev-Skye/Buddy-Avatar-AI/main/AvyAI_Frontend/assets/demo/BuddyAiAvatar2.mp4)
+
 
 
 ---
