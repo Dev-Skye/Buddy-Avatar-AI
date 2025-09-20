@@ -7,10 +7,11 @@ It provides the **chat interface**, handles user input, displays Buddy's respons
 
 ## 🎥 Demo
 
-![Demo Screenshot](../assets/images/demo1.png)  
-![Demo Screenshot](../assets/images/demo2.png)
-![Demo Screenshot](../assets/images/demo3.png)
-![Demo Screenshot](../assets/images/demo4.png)      
+![Demo Screenshot](https://raw.githubusercontent.com/Dev-Skye/Buddy-Avatar-AI/main/AvyAI_Frontend/assets/images/DEMO1.png)
+![Demo Screenshot](https://raw.githubusercontent.com/Dev-Skye/Buddy-Avatar-AI/main/AvyAI_Frontend/assets/images/DEMO2.png)
+![Demo Screenshot](https://raw.githubusercontent.com/Dev-Skye/Buddy-Avatar-AI/main/AvyAI_Frontend/assets/images/DEMO3.png)
+![Demo Screenshot](https://raw.githubusercontent.com/Dev-Skye/Buddy-Avatar-AI/main/AvyAI_Frontend/assets/images/DEMO4.png)
+
 
 
 [Watch Demo Video](../assets/demo/BuddyAiAvatar.mp4)  
