@@ -13,7 +13,15 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+const corsOptions = {
+  origin: "https://buddy-avatar-ai-5p7i.vercel.app", //Frontend url
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
+
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -43,7 +51,7 @@ app.use("/uploads", express.static(uploadsDir));
 let conversationHistory = [];
 const shownEmoji = new Set();
 
-// ---------------- Text chat endpoint ----------------
+
 // ---------------- Text chat endpoint ----------------
 app.post("/openai", async (req, res) => {
   const userMessage = req.body.message;
