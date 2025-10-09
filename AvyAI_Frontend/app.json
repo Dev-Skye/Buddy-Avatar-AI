@@ -4,6 +4,11 @@
     "slug": "AvyAI",
     "version": "1.0.0",
     "orientation": "portrait",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
@@ -25,13 +30,15 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.buddy.buddyavatatar"
+      "package": "com.buddy.buddyavatatar",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      "expo-asset"
     ],
     "extra": {
       "eas": {

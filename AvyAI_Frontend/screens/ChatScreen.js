@@ -17,10 +17,8 @@ import ChatInput from "../components/ChatInput";
 
 
 
-const BACKEND_URL =
-  Platform.OS === "android"
-    ? "http://10.232.165.68:3000"
-    : "http://localhost:3000";
+const BACKEND_URL = "https://buddy-avatar-ai.onrender.com";
+
 
 export default function ChatScreen({ navigation, route }) {
   const [messages, setMessages] = useState([]);
