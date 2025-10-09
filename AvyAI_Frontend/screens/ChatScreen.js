@@ -185,11 +185,22 @@ useEffect(() => {
 
       // Upload to backend
       const formData = new FormData();
-      formData.append("file", { uri, name: `recording-${Date.now()}.m4a`, type: "audio/m4a" });
 
-      const response = await axios.post(`${BACKEND_URL}/upload-audio`, formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      if (Platform.OS === "web") {
+  const blob = await fetch(uri).then(r => r.blob());
+  formData.append("file", new File([blob], `recording-${Date.now()}.m4a`, { type: "audio/m4a" }));
+} else {
+  formData.append("file", { uri, name: `recording-${Date.now()}.m4a`, type: "audio/m4a" });
+}
+
+const response = await axios.post(`${BACKEND_URL}/upload-audio`, formData, {
+  headers: { "Content-Type": "multipart/form-data" },
+});
+      // formData.append("file", { uri, name: `recording-${Date.now()}.m4a`, type: "audio/m4a" });
+
+      // const response = await axios.post(`${BACKEND_URL}/upload-audio`, formData, {
+      //   headers: { "Content-Type": "multipart/form-data" },
+      // });
 
       // Remove thinking bubble
       setMessages((prev) => prev.filter((msg) => msg.id !== thinkingId));
