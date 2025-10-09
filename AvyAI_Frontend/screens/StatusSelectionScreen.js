@@ -22,12 +22,14 @@ export default function StatusSelectionScreen({ navigation }) {
   const [name, setName] = useState("");
   const [selectedStatus, setSelectedStatus] = useState(null);
 
+  const BACKEND_URL = "https://buddy-avatar-ai.onrender.com";
+
   const handleNext = async () => {
   if (step === 1 && name.trim() !== "") {
     setStep(2);
   } else if (step === 2 && selectedStatus) {
     try {
-      const response = await fetch("http://10.232.165.68:3000/openai", {
+      const response = await fetch(`${BACKEND_URL}/openai`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
